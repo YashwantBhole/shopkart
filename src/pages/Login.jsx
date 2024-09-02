@@ -1,10 +1,11 @@
 
 
 import React, { useState } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button,} from 'react-bootstrap';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+
 
 const Login = () => {
     const [form, setForm] = useState({ email: '', password: '' });
@@ -23,12 +24,16 @@ const Login = () => {
 
       if(user){
         localStorage.setItem('loggedInUser' , JSON.stringify(user));
-        alert("logIn Successsful ! ")
+        alert("logIn Successsful ! ");
+   
       }else{
         alert("Invalid username or password")
+
       }
         // Add your login logic here
         console.log('Logged in:', form);
+        window.location.reload();
+        
     };
 
     return (

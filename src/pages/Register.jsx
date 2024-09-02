@@ -30,15 +30,18 @@ const Register = () => {
             // }
             // Add your registration logic here
 
-        };
-        console.log('Registered:', form);
-        const users = JSON.parse(localStorage.getItem('users')) || [];
-        users.push({
-            name: form.name,
-            email: form.email,
-            password: form.password
-        });
-        localStorage.setItem('users', JSON.stringify(users));
+        }else{
+            alert('Registration Successful')
+            window.location.reload();
+            console.log('Registered:', form);
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push({
+                name: form.name,
+                email: form.email,
+                password: form.password
+            });
+            localStorage.setItem('users', JSON.stringify(users));
+        }
 
     }
         return (

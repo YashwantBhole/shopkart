@@ -32,8 +32,9 @@ const Footer = () => {
               <i className="fas fa-envelope" style={{ color: '#d93025', fontSize: '1.4rem', margin: '0 10px' }}></i> yashwantbhole2004@gmail.com
             </p>
             <p>
-              <i className="fas fa-phone" style={{ color: '#0d6efd', fontSize: '1.4rem', margin: '0 10px' }}></i> +91 93591 42599
-            </p>
+              
+              <i className="fas fa-phone" style={{ color: '#0d6efd', fontSize: '1.4rem', margin: '0 10px' }}></i> 
+              <a href="tel:+919359142599" className="text-light">+919359142599</a>              </p>
             <a href='https://maps.app.goo.gl/mV4d84e2szaQXrZH8' className='text-none'>
               <i className="fas fa-map-marker-alt" style={{ color: '#dc3545', fontSize: '1.4rem', margin: '0 10px' }}></i> RSML, Latur, India
             </a>

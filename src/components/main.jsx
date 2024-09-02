@@ -13,7 +13,7 @@ const Home = () => {
           <img
             // className="d-block w-100"
              className="card-img img-fluid"
-            src="./assets/onlinePay.jpg"
+            src="/assets/onlinePay.jpg"
             alt="First slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />
@@ -25,7 +25,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./assets/ladiesWear.jpg"
+            src="/assets/ladiesWear.jpg"
             alt="Second slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />
@@ -37,7 +37,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./assets/laptop.jpg"
+            src="/assets/laptop.jpg"
             alt="Third slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />

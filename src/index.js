@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -11,7 +11,7 @@ import { Home, Product, Products, AboutPage, ContactPage, Cart, Login, Register,
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Provider store={store}>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,5 +27,5 @@ root.render(
         <Route path="/product/*" element={<PageNotFound />} />
       </Routes>
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 );

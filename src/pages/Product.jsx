@@ -174,7 +174,7 @@ const Product = () => {
       <div className="container">
         <div className="row">{loading ? <Loading /> : <ShowProduct />}</div>
         <div className="row my-5 py-5">
-          <div className="d-block d-md-none">
+        <div className="row my-5 py-5">
           <h2 className="">You may also Like</h2>
             <Marquee
               pauseOnHover={true}

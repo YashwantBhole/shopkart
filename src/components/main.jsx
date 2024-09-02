@@ -13,7 +13,7 @@ const Home = () => {
           <img
             // className="d-block w-100"
              className="card-img img-fluid"
-            src="/assets/onlinePay.jpg"
+            src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
             alt="First slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />
@@ -25,7 +25,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/assets/ladiesWear.jpg"
+            src="https://images.pexels.com/photos/5622929/pexels-photo-5622929.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Second slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />
@@ -37,7 +37,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/assets/laptop.jpg"
+            src="https://img.freepik.com/free-photo/sale-discount-promotion-special-offer-graphic-concept_53876-120872.jpg?ga=GA1.1.1052083188.1715228083&semt=ais_hybrid"
             alt="Third slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />

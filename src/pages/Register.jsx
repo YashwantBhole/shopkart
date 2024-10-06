@@ -1,12 +1,18 @@
-
-
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import {FaCheckCircle} from 'react-icons/fa'
+
 
 const Register = () => {
+const navigate = useNavigate();    
+const [passError , setPassError] = useState(false)
+const [showSuccess , setShowSuccess] = useState(false)
+
+
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -19,20 +25,22 @@ const Register = () => {
         setForm({ ...form, [name]: value });
     };
 
+    const closePopup =() =>{
+        setShowSuccess(false)
+       navigate('/Login')
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const { password, confirmPassword } = form;
         if (password !== confirmPassword) {
-            alert('Passwords do not match');
+          setPassError(true)
             return;
-            // }else{
-            //     alert('Registration Successful !')
-            // }
-            // Add your registration logic here
+
 
         }else{
-            alert('Registration Successful')
-            window.location.reload();
+           setShowSuccess(true)
+        
             console.log('Registered:', form);
             const users = JSON.parse(localStorage.getItem('users')) || [];
             users.push({
@@ -94,6 +102,11 @@ const Register = () => {
                                 placeholder="Confirm password"
                                 required
                             />
+                            {passError && (
+                                <div className='align-items-center'>
+                                    <h6 className='text-danger fw-bold'>password error!</h6>
+                                </div>
+                            )}
                               <div className="my-3">
               <p>already have account? <Link to="/login" className="text-decoration-underline text-info">Login</Link> </p>
               </div>
@@ -102,6 +115,24 @@ const Register = () => {
                             Register
                         </Button>
                     </Form>
+
+
+                    {/* set show success popup*/}
+                    {showSuccess && (
+                        <div className='position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50'>
+                            <div className='bg-white p-4 rounded text-center shadow'>
+                                <h3 className='fs-4 fw-bold text-success'>Registration Successful!</h3>
+                               <div className='d-flex justify-content-center align-items-center'>
+                                <FaCheckCircle className='text-success 'style ={{fontSize : '34px'}} />
+                               </div>
+                                <button className='mt-3 btn btn-primary' 
+                                onClick={closePopup}>close</button>
+                            </div>
+                        </div>
+                    )}
+
+
+    
                 </Container>
                 <Footer />
             </>

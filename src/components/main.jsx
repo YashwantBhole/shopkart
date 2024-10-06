@@ -2,6 +2,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import onlinePay from '../Assets/onlinePay.jpg'
+import ladiesWear from '../Assets/ladiesWear.jpg'
+import laptop from '../Assets/laptop.jpg'
 import './main.css'
 
 const Home = () => {
@@ -13,7 +16,7 @@ const Home = () => {
           <img
             // className="d-block w-100"
              className="card-img img-fluid"
-            src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+            src={onlinePay}
             alt="First slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />
@@ -25,7 +28,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/5622929/pexels-photo-5622929.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src={ladiesWear}
             alt="Second slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />
@@ -37,7 +40,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/7289746/pexels-photo-7289746.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src={laptop}
             alt="Third slide"
             style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
           />

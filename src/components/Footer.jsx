@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="row">
           {/* Social Media Links */}
           <div className="col-lg-3 col-md-6 mb-3">
-            <h5 className="mb-3">Follow Us</h5>
+            <h5 className="mb-3 text-center">Follow Us</h5>
             <a href="https://github.com/YashwantBhole" className="btn btn-outline-dark btn-sm me-2" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github" style={{ color: '#3b5998', fontSize: '2rem', margin: '0 10px' }}></i>
             </a>

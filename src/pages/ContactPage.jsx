@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Footer } from '../components';
 import { Navbar } from '../components';
+import { FaTimesCircle, FaCheckCircle } from 'react-icons/fa';
+
 
 const ContactUs = () => {
+
+  const [showSuccess, setShowSuccess] = useState(false)
+  const [showError, setShowError] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,6 +18,11 @@ const ContactUs = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const closePopup = () => {
+    setShowError(false)
+    setShowSuccess(false)
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,12 +43,12 @@ const ContactUs = () => {
       )
       .then(
         (result) => {
-          alert('Message sent successfully!');
+          setShowSuccess(true)
           setFormData({ name: '', email: '', message: '' });
         },
         (error) => {
           console.error('Failed to send message:', error);
-          alert('Failed to send message.');
+          setShowError(true)
         }
       );
   };
@@ -98,6 +108,44 @@ const ContactUs = () => {
             Send Message
           </button>
         </form>
+
+        {showSuccess && (
+          <div className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50">
+            <div className="bg-white p-4 rounded text-center shadow">
+              <h3 className="fs-4 fw-bold text-success">Message sent successful!</h3>
+              <div className='d-flex justify-content-center align-items-center'>
+              <FaCheckCircle className='text-success' fontSize={34}/>
+              </div>
+
+              <button
+                className="mt-3 btn btn-primary"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+
+
+        {showError && (
+          <div className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50">
+            <div className="bg-white p-4 rounded text-center shadow">
+              <h3 className="fs-4 fw-bold text-danger">Error sending message</h3>
+              <div className='d-flex justify-content-center align-items-center'>
+                <FaTimesCircle className='text-danger' fontSize={34}/>
+              </div>
+              <button
+                className="mt-3 btn btn-primary"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+
+
       </div>
       <Footer />
     </>

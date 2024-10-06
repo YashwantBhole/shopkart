@@ -29,7 +29,7 @@ const Navbar = () => {
           </span>
         </NavLink>
         <button className="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto my-1 text-center">
@@ -46,6 +46,8 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/contact"><i className='fa fa-phone'></i>Contact</NavLink>
             </li>
           </ul>
+
+
           <div className="buttons text-center">
             <NavLink to="/login" className="btn btn-outline-dark m-2">
               <i className="fa fa-sign-in-alt mr-1"></i> Login
@@ -57,6 +59,8 @@ const Navbar = () => {
               <i className="fa fa-cart-shopping mr-1"></i> Cart ({state.length})
             </NavLink>
           </div>
+
+          
         </div>
       </div>
     </nav>

@@ -1,7 +1,10 @@
 {
   "files": {
     "main.css": "/shopkart/static/css/main.0af309cb.css",
-    "main.js": "/shopkart/static/js/main.1fbfcae0.js",
+    "main.js": "/shopkart/static/js/main.9924a37d.js",
+    "static/media/ladiesWear.jpg": "/shopkart/static/media/ladiesWear.f739c62dc2920abec3d7.jpg",
+    "static/media/laptop.jpg": "/shopkart/static/media/laptop.180bead212f8148e275b.jpg",
+    "static/media/onlinePay.jpg": "/shopkart/static/media/onlinePay.3a851d5ed1be0a54eee4.jpg",
     "static/media/fa-solid-900.ttf": "/shopkart/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/shopkart/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/shopkart/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -12,10 +15,10 @@
     "static/media/fa-v4compatibility.woff2": "/shopkart/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/shopkart/index.html",
     "main.0af309cb.css.map": "/shopkart/static/css/main.0af309cb.css.map",
-    "main.1fbfcae0.js.map": "/shopkart/static/js/main.1fbfcae0.js.map"
+    "main.9924a37d.js.map": "/shopkart/static/js/main.9924a37d.js.map"
   },
   "entrypoints": [
     "static/css/main.0af309cb.css",
-    "static/js/main.1fbfcae0.js"
+    "static/js/main.9924a37d.js"
   ]
 }

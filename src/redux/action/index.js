@@ -13,3 +13,24 @@ export const delCart = (product) =>{
         payload:product
     }
 }
+
+
+export const loginUser = (name) => {
+    return {
+      type: 'LOGIN',
+      payload: { name },
+    };
+  };
+
+  
+  export const logoutUser = () => {
+    return {
+      type: 'LOGOUT',
+    };
+  };
+
+
+  export const setUser = (user) => ({
+    type: 'SET_USER',
+    payload: user,
+  });

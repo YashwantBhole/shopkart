@@ -110,7 +110,7 @@ const Products = () => {
                 <ul className="list-group list-group-flush">
                 {/* <li className="list-group-item lead">{product.rating.rate}</li> */}
                   <li className="list-group-item lead fw-bold" >&#8377;
-                  {(product.price * 82).toFixed(2)}</li>
+                  {(product.price * 82/10).toFixed(2)}</li>
                   {/* <li className="list-group-item">Dapibus ac facilisis in</li>
                     <li className="list-group-item">Vestibulum at eros</li> */}
                 </ul>

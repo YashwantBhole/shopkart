@@ -7,7 +7,8 @@ import store from './redux/store';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-import { Home, Product, Products, AboutPage, ContactPage, Cart, Login, Register, Checkout, PageNotFound } from "./pages"
+import { Home, Product, Products, AboutPage, ContactPage, Cart, Login, Register, Checkout, PageNotFound, UserProfile } from "./pages"
+import OrderConfirm from './pages/OrderConfirm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,8 @@ root.render(
         <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/product/*" element={<PageNotFound />} />
+        <Route path='/profile' element= {<UserProfile />} />
+        <Route path = '/orderConfirm' element={<OrderConfirm/>} />
       </Routes>
     </Provider>
   </HashRouter>

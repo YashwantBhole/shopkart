@@ -1,21 +1,31 @@
-
-
 import React, { useState } from 'react';
-import { Container, Form, Button, } from 'react-bootstrap';
-import Navbar from '../components/Navbar'
+import { Container, Form, Button } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { setUser } from '../redux/action'; // Import your action to set user
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [form, setForm] = useState({ email: '', password: '' });
-  const [success, setSuccess] = useState(false)
-  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch(); // Get dispatch function from redux
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
+
+
+  const handleKey =(e) =>{
+  if(e.key === 'Enter'){
+    handleSubmit(e);
+  }
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,30 +36,29 @@ const Login = () => {
 
     if (user) {
       localStorage.setItem('loggedInUser', JSON.stringify(user));
-      setSuccess(true)
-
+      dispatch(setUser({ ...user, isLoggedIn: true })); // Dispatch user information to redux
+      setSuccess(true);
     } else {
-     setError(true)
-
+      setError(true);
     }
-
   };
 
-  const closeSuccess =()=>{
-    setSuccess(false)
-  }
+  const closeSuccess = () => {
+    setSuccess(false);
+    navigate('/');
+  };
 
   const closeError = () => {
-    setError(false)
+    setError(false);
     window.location.reload();
-  }
+  };
 
   return (
     <>
       <Navbar />
       <Container className="mt-5">
         <h2 className="mb-4">Login</h2>
-        <Form onSubmit={handleSubmit} className="shadow p-4 bg-light rounded">
+        <Form onSubmit={handleSubmit} className="shadow p-4 bg-light rounded" >
           <Form.Group controlId="formEmail" className="mb-3">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -67,12 +76,13 @@ const Login = () => {
               type="password"
               name="password"
               value={form.password}
+              onKeyDown={handleKey}
               onChange={handleChange}
               placeholder="Password"
               required
             />
             <div className="my-3">
-              <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
+              <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link></p>
             </div>
           </Form.Group>
 
@@ -81,41 +91,38 @@ const Login = () => {
           </Button>
         </Form>
 
-        {/*  show popup */}
+        {/* Show success popup */}
         {success && (
-          <div className='position-fixed top-0 start-0  w-100 h-100 d-flex justify-content-center align-items-center  bg-dark bg-opacity-50'>
-            <div className='bg-white p-4 rounded text-center-shadow'>
+          <div className='position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50'>
+            <div className='bg-white p-4 rounded text-center shadow'>
               <h3 className='fs-4 fw-bold text-success'>Login Successful!</h3>
               <div className='d-flex justify-content-center align-items-center'>
-                <FaCheckCircle className='text-success' fontSize={34}/>
+                <FaCheckCircle className='text-success' fontSize={34} />
               </div>
-              <button className='mt-3 btn btn-primary '
-                onClick={closeSuccess}>close</button>
+              <div className='d-flex justify-content-center align-items-center'>
+                <button className='mt-3 btn btn-primary' onClick={closeSuccess}>Close</button>
+              </div>
             </div>
           </div>
         )}
 
-
-        {/*error section  */}
+        {/* Error section */}
         {error && (
           <div className='position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50'>
-          <div className='bg-white p-4 rounded text-center shadow'>
-         <h3 className='fs-4 fw-bold text-danger'>Login Error </h3>
-         <div className='d-flex justify-content-center align-items-center '>
-          <FaTimesCircle className='text-danger ' fontSize={34}/>
-         </div>
-         <button className='mt-3 btn btn-primary 'onClick={closeError}>
-         close
-         </button>
+            <div className='bg-white p-4 rounded text-center shadow'>
+              <h3 className='fs-4 fw-bold text-danger'>Login Error</h3>
+              <div className='d-flex justify-content-center align-items-center'>
+                <FaTimesCircle className='text-danger' fontSize={34} />
+              </div>
+              <button className='mt-3 btn btn-primary' onClick={closeError}>
+                Close
+              </button>
+            </div>
           </div>
-         </div>
-
         )}
-
       </Container>
       <Footer />
     </>
-
   );
 };
 

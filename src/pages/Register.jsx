@@ -25,6 +25,13 @@ const [showSuccess , setShowSuccess] = useState(false)
         setForm({ ...form, [name]: value });
     };
 
+
+    const handleKeyDown= (e) =>{
+        if(e.key === 'Enter' && form.name.trim() !== '' && form.email.trim() !== '' && form.password.trim() !== ''){
+            handleSubmit(e);
+        }
+    }
+
     const closePopup =() =>{
         setShowSuccess(false)
        navigate('/Login')
@@ -32,6 +39,7 @@ const [showSuccess , setShowSuccess] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         const { password, confirmPassword } = form;
         if (password !== confirmPassword) {
           setPassError(true)
@@ -66,6 +74,7 @@ const [showSuccess , setShowSuccess] = useState(false)
                                 name="name"
                                 value={form.name}
                                 onChange={handleChange}
+                            
                                 placeholder="Enter your name"
                                 required
                             />
@@ -99,6 +108,7 @@ const [showSuccess , setShowSuccess] = useState(false)
                                 name="confirmPassword"
                                 value={form.confirmPassword}
                                 onChange={handleChange}
+                                onKeyDown={handleKeyDown}
                                 placeholder="Confirm password"
                                 required
                             />

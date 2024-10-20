@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopkart/static/css/main.0af309cb.css",
-    "main.js": "/shopkart/static/js/main.9924a37d.js",
+    "main.css": "/shopkart/static/css/main.8317152b.css",
+    "main.js": "/shopkart/static/js/main.53e657d3.js",
     "static/media/ladiesWear.jpg": "/shopkart/static/media/ladiesWear.f739c62dc2920abec3d7.jpg",
     "static/media/laptop.jpg": "/shopkart/static/media/laptop.180bead212f8148e275b.jpg",
     "static/media/onlinePay.jpg": "/shopkart/static/media/onlinePay.3a851d5ed1be0a54eee4.jpg",
@@ -14,11 +14,11 @@
     "static/media/fa-v4compatibility.ttf": "/shopkart/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/shopkart/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/shopkart/index.html",
-    "main.0af309cb.css.map": "/shopkart/static/css/main.0af309cb.css.map",
-    "main.9924a37d.js.map": "/shopkart/static/js/main.9924a37d.js.map"
+    "main.8317152b.css.map": "/shopkart/static/css/main.8317152b.css.map",
+    "main.53e657d3.js.map": "/shopkart/static/js/main.53e657d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0af309cb.css",
-    "static/js/main.9924a37d.js"
+    "static/css/main.8317152b.css",
+    "static/js/main.53e657d3.js"
   ]
 }

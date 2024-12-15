@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 🛒 ShopKart  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and user-friendly e-commerce platform offering seamless product browsing, shopping cart management, and a secure checkout experience.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 Features  
 
-### `npm start`
+- **User Authentication**: Sign Up, Sign In, and Profile Management.  
+- **Product Listing**: Browse through a variety of products with filtering and sorting options.  
+- **Cart Management**: Add, remove, and update product quantities in the cart.  
+- **Free Shipping**: Indicator for free shipping eligibility.  
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.  
+- **Smooth Animations**: Enhances user experience using Bootstrap animations.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Purpose  
 
-### `npm test`
+ShopKart showcases a full-stack e-commerce platform built with React and Tailwind CSS. It highlights dynamic state management, modern UI design, and essential e-commerce functionalities.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Demo  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live Demo](#) (Add your deployment link here)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Technologies Used  
 
-### `npm run eject`
+### **Frontend**  
+- React  
+- Bootstrap  
+- Redux (for state management)  
+- React Icons  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Backend**  
+- Node.js  
+- Express  
+- LocalStorage (to store user sign up details) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Tools**  
+- Axios (for API requests)  
+- Postman (for testing backend APIs)  
+- GitHub Pages (for deployment)  
+- EmailsJS (for email services)
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Installation  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Follow these steps to set up and run **ShopKart** locally:  
 
-## Learn More
+1. Clone the repository:  
+   ```bash  
+   git clone <repository-link>  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. naviagte to project directory:
+    ```bash  
+    cd shopkart
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 3. Install Dependencies:
+    ```bash 
+    npm install
+4. start the server:
+    ```bash
+    npm start
 
-### Code Splitting
+    🌟 Usage
+Explore Products: Browse the product catalog with categories and filtering.
+Add to Cart: Select products and manage quantities in the shopping cart.
+Checkout: Complete the purchase with a smooth checkout flow.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🔑 API Details
+ShopKart uses a https://fakestoreapi.com/ backend API for product management and user authentication.
 
-### Analyzing the Bundle Size
+👨‍💻 Author
+Developed by Yashwant Bhole
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yashwantbhole/)  
+- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/YashwantBhole)  

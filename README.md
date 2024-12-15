@@ -22,8 +22,7 @@ ShopKart showcases a full-stack e-commerce platform built with React and Tailwin
 ---
 
 ## 🚀 Demo  
-
-[Live Demo](#) (Add your deployment link here)
+https://yashwantbhole.github.io/shopkart/
 
 ---
 

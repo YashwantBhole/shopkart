@@ -13,7 +13,7 @@ const OrderConfirm = () => {
       </div>
 
       <div className="mt-4">
-        <button className="btn btn-primary me-3" onClick={() => window.location.href = '/shop'}>
+        <button className="btn btn-primary me-3" onClick={() => window.location.href = '/home'}>
           Continue Shopping
         </button>
         <button className="btn btn-secondary" onClick={() => window.location.href = '/track-order'}>

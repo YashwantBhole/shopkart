@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🛒 ShopKart  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, user-friendly e-commerce platform offering seamless product browsing, dynamic shopping cart management, and a smooth checkout experience. Built to demonstrate React state management, category-based product filtering, and real-time cart updates.
 
-## Available Scripts
+Shop, browse, and manage your cart effortlessly! ⚡ 
+---
 
-In the project directory, you can run:
+## 📖 Features  
 
-### `npm start`
+- **User Authentication**: Sign Up, Sign In, and Profile Management.  
+- **Product Listing**: Browse through a variety of products with filtering and sorting options.  
+- **Cart Management**: Add, remove, and update product quantities in the cart.  
+- **Free Shipping**: Indicator for free shipping eligibility.  
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.  
+- **Smooth Animations**: Enhances user experience using Bootstrap animations.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## 🖥️ Demo Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**1️⃣ Home/Product Listing**  
+<img src="./public/screenshots/home-page.png" width="500"/>
 
-### `npm test`
+**2️⃣ Product categories and Filters**  
+<img src="./public/screenshots/category.png" width="500"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**3️⃣ Shopping Cart**  
+<img src="./public/screenshots/cart.png" width="500"/>
 
-### `npm run build`
+**4️⃣ Checkout Page**  
+<img src="./public/screenshots/checkout.png" width="500"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 Purpose  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ShopKart showcases a full-stack e-commerce platform built with React and Tailwind CSS. It highlights dynamic state management, modern UI design, and essential e-commerce functionalities.  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Demo  
+https://yashwantbhole.github.io/shopkart/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Technologies Used  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Frontend**  
+- React  
+- Bootstrap  
+- Redux (for state management)  
+- React Icons  
 
-## Learn More
+### **Backend**  
+- Node.js  
+- Express  
+- LocalStorage (to store user sign up details) 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Tools**  
+- Axios (for API requests)  
+- Postman (for testing backend APIs)  
+- GitHub Pages (for deployment)  
+- EmailsJS (for email services)
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📦 Installation  
 
-### Code Splitting
+Follow these steps to set up and run **ShopKart** locally:  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repository:  
+   ```bash  
+   git clone <repository-link>  
 
-### Analyzing the Bundle Size
+2. naviagte to project directory:
+    ```bash  
+    cd shopkart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ 3. Install Dependencies:
+    ```bash 
+    npm install
+4. start the server:
+    ```bash
+    npm start
 
-### Making a Progressive Web App
+    🌟 Usage
+Explore Products: Browse the product catalog with categories and filtering.
+Add to Cart: Select products and manage quantities in the shopping cart.
+Checkout: Complete the purchase with a smooth checkout flow.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔑 API Details
+ShopKart uses a https://fakestoreapi.com/ backend API for product management and user authentication.
 
-### Advanced Configuration
+ ## 👨‍💻 Connect with Me  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">  
+  <a href="https://www.linkedin.com/in/yashwantbhole/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:yashwantbhole2004@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="https://github.com/YashwantBhole" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.instagram.com/yashwant_bhole_07" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  </a>
+</p>
